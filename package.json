@@ -1,0 +1,31 @@
+{
+  "name": "wishlistproject",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/plombalolo/wishlistProject#readme",
+  "bugs": {
+    "url": "https://github.com/plombalolo/wishlistProject/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plombalolo/wishlistProject.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^7.1.1",
+    "mongoose": "^9.4.1",
+    "multer": "^2.1.1",
+    "nodemon": "^3.1.14"
+  }
+}
