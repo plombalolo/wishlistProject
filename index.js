@@ -1,6 +1,7 @@
 import express from 'express'
 import multer from 'multer'
 import mongoose from 'mongoose'
+import 'dotenv/config';
 
 import { registerValidator, loginValidator, postCreateValidation } from './validation.js';
 
@@ -9,7 +10,7 @@ import { PostController, UserController } from './controller/index.js';
 import { checkAuth, handleValidationErrors } from './utils/index.js';
 
 mongoose
-    .connect('mongodb://danycompby:eAvuwRpSkncYVF9j@ac-m4btrab-shard-00-00.wbercjc.mongodb.net:27017,ac-m4btrab-shard-00-01.wbercjc.mongodb.net:27017,ac-m4btrab-shard-00-02.wbercjc.mongodb.net:27017/test?ssl=true&replicaSet=atlas-2wmy0b-shard-0&authSource=admin&appName=Cluster0')
+    .connect(process.env.MONGODB_URI)
     .then(() => console.log('Db Ok'))
     .catch((err) => console.log('Db Error:', err))
 
