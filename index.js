@@ -6,7 +6,7 @@ import { registerValidator, loginValidator, postCreateValidation } from './valid
 
 import { PostController, UserController } from './controller/index.js';
 
-import { checkAuth, handleValidationErrors } from './utils/checkAuth.js';
+import { checkAuth, handleValidationErrors } from './utils/index.js';
 
 mongoose
     .connect('mongodb://danycompby:eAvuwRpSkncYVF9j@ac-m4btrab-shard-00-00.wbercjc.mongodb.net:27017,ac-m4btrab-shard-00-01.wbercjc.mongodb.net:27017,ac-m4btrab-shard-00-02.wbercjc.mongodb.net:27017/test?ssl=true&replicaSet=atlas-2wmy0b-shard-0&authSource=admin&appName=Cluster0')
